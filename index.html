@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StayOn — MEGATHON Finals Pitch</title>
+  <meta name="description" content="StayOn turns AI coding wait time into real money. MEGATHON Startup Track pitch deck." />
+  <link rel="icon" href="assets/stayon-icon-128.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/deck.css" />
+</head>
+<body>
+  <div id="deck" class="deck">
+
+    <!-- Slide 1: Problem + why now -->
+    <section class="slide slide-problem active" data-slide="1">
+      <header class="slide-header slide-header-compact">
+        <img src="assets/stayon-icon-128.svg" alt="StayOn" class="logo" width="36" height="36" />
+        <span class="tag">MEGATHON Startup Track</span>
+        <div class="problem-chips" aria-label="Problem context">
+          <span class="chip">50+ agent waits / day</span>
+          <span class="chip">High-intent attention</span>
+          <span class="chip chip-muted">Nobody monetizes it yet</span>
+        </div>
+      </header>
+
+      <div class="problem-intro">
+        <h1 class="headline-compact">AI agents made waiting the new distraction.</h1>
+        <p class="problem-stat">
+          Developers lose <strong>~90 minutes daily</strong> to agent wait time —
+          and most of it ends in <strong class="gold">distraction</strong>, not productive rest.
+        </p>
+      </div>
+
+      <div class="problem-story">
+        <article class="problem-step">
+          <div class="step-badge">Prompt send · wait begins</div>
+          <div class="video-frame" style="--video-ratio: 1488 / 1984">
+            <video
+              class="problem-video"
+              data-step="1"
+              src="assets/video-935_singular_display.mov"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Developer sends a Cursor prompt, agent starts working, developer opens TikTok on phone"
+            ></video>
+          </div>
+        </article>
+
+        <div class="timeline-bridge">
+          <span class="bridge-time">+3 min</span>
+          <div class="bridge-compare">
+            <div class="compare-row compare-agent">
+              <span class="compare-icon">🤖</span>
+              <div>
+                <span class="compare-label">Agent</span>
+                <span class="compare-state compare-done">Task complete ✓</span>
+              </div>
+            </div>
+            <div class="compare-divider"></div>
+            <div class="compare-row compare-user">
+              <span class="compare-icon">📱</span>
+              <div>
+                <span class="compare-label">You</span>
+                <span class="compare-state compare-stuck">Still scrolling…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <article class="problem-step problem-step-punch">
+          <div class="step-badge step-badge-alert">Agent done with task · user still distracted</div>
+          <div class="video-frame" style="--video-ratio: 1376 / 1840">
+            <video
+              class="problem-video"
+              data-step="2"
+              src="assets/video-929_singular_display.mov"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Cursor agent finished the task but developer is still on phone"
+            ></video>
+          </div>
+        </article>
+
+        <aside class="problem-payoff">
+          <div class="payoff-card">
+            <span class="payoff-icon">🧠</span>
+            <p class="payoff-headline">Context lost</p>
+            <p class="payoff-body">You return minutes later —<br />no idea where you left off.</p>
+          </div>
+          <div class="payoff-loop">
+            <span>Prompt</span>
+            <span class="arrow">→</span>
+            <span>Wait</span>
+            <span class="arrow">→</span>
+            <span>Drift</span>
+            <span class="arrow">→</span>
+            <span class="payoff-end">Return blind</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Slide 2: Solution -->
+    <section class="slide" data-slide="2">
+      <h1>Earn money while your agent works.</h1>
+      <p class="subline">StayOn = reward layer for AI coding. Detects agent busy state → opens paid tasks → tracks real earnings → brings you back when the agent finishes.</p>
+
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="step-num">1</div>
+          <h3>Agent busy</h3>
+          <p class="mono">hooks detect</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step highlight-gold">
+          <div class="step-num">2</div>
+          <h3>StayOn panel</h3>
+          <p>paid survey · earn $ tracked</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="step-num">3</div>
+          <h3>Agent ready</h3>
+          <p>chime + focus back to code</p>
+        </div>
+      </div>
+
+      <div class="panel-mock">
+        <div class="panel-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="panel-title">StayOn</span>
+        </div>
+        <div class="panel-body">
+          <div class="panel-tabs">
+            <span class="tab active">Surveys</span>
+            <span class="tab">Learn</span>
+            <span class="tab">Perks</span>
+          </div>
+          <div class="panel-balance">
+            <span class="balance-label">Wallet</span>
+            <span class="balance-amount">1,250 points ⭐</span>
+            <span class="balance-cash">≈ €0.62</span>
+          </div>
+          <button class="panel-cta">Open in browser</button>
+        </div>
+      </div>
+
+      <table class="diff-table">
+        <thead>
+          <tr><th>Not this</th><th>StayOn</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Generic offerwall</td><td>Triggered only during agent wait</td></tr>
+          <tr><td>Spinner ads</td><td>Real CPX postbacks + ledger</td></tr>
+          <tr><td>Distraction</td><td>Return-to-context when idle</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Slide 3: Execution -->
+    <section class="slide" data-slide="3">
+      <h1>Friday idea → Sunday: live product.</h1>
+
+      <table class="before-after">
+        <thead>
+          <tr><th>Friday baseline</th><th>Sunday (live)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Concept + local dev</td><td><strong>Open VSX</strong> extension published</td></tr>
+          <tr><td>Mock/local wallet</td><td><strong>CPX postbacks</strong> → Supabase ledger</td></tr>
+          <tr><td>Hooks on one machine</td><td><strong>Windows inbox fallback</strong> + hook installer</td></tr>
+          <tr><td>No public proof</td><td><strong>/try</strong> onboarding + <strong>/earnings?userId=</strong></td></tr>
+          <tr><td>—</td><td><strong>Live stats</strong> on homepage</td></tr>
+        </tbody>
+      </table>
+
+      <div class="arch-diagram">
+        <div class="arch-row">
+          <span class="arch-box">Cursor hooks</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-box">localhost bridge</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-box">Extension panel</span>
+        </div>
+        <div class="arch-down">↓</div>
+        <div class="arch-row">
+          <span class="arch-box">Vercel API + CPX postback</span>
+        </div>
+        <div class="arch-down">↓</div>
+        <div class="arch-row">
+          <span class="arch-box">Supabase (reward_events, balances)</span>
+        </div>
+      </div>
+
+      <div class="callout">
+        Real integrations: Cursor lifecycle hooks, CPX Research, Supabase, Vercel — not a weekend mock.
+      </div>
+
+      <div class="metric-strip" id="metric-strip">
+        <span><strong id="metric-testers">—</strong> testers</span>
+        <span class="sep">·</span>
+        <span><strong id="metric-surveys">—</strong> confirmed surveys</span>
+        <span class="sep">·</span>
+        <span><strong id="metric-points">—</strong> points earned</span>
+        <span class="sep">·</span>
+        <span><strong id="metric-cash">—</strong> tracked</span>
+      </div>
+    </section>
+
+    <!-- Slide 4: Proof -->
+    <section class="slide" data-slide="4">
+      <h1>Real money. Real ledger. Open it now.</h1>
+
+      <div class="proof-grid">
+        <a class="proof-card" href="https://open-vsx.org/extension/stayon/stayon" target="_blank" rel="noopener">
+          <span class="proof-label">Install</span>
+          <span class="proof-url">open-vsx.org/extension/stayon/stayon</span>
+        </a>
+        <a class="proof-card" href="https://stay-on-nu.vercel.app/try" target="_blank" rel="noopener">
+          <span class="proof-label">Onboard</span>
+          <span class="proof-url">stay-on-nu.vercel.app/try</span>
+        </a>
+        <a class="proof-card" href="https://stay-on-nu.vercel.app/earnings" target="_blank" rel="noopener">
+          <span class="proof-label">Per-user earnings</span>
+          <span class="proof-url">/earnings?userId=&lt;uuid&gt;</span>
+        </a>
+        <a class="proof-card" href="https://stay-on-nu.vercel.app/" target="_blank" rel="noopener">
+          <span class="proof-label">Aggregate stats</span>
+          <span class="proof-url">Homepage live counters</span>
+        </a>
+      </div>
+
+      <div class="screenshot-trio">
+        <div class="screenshot-placeholder">
+          <span class="screenshot-label">Extension wallet</span>
+          <span class="screenshot-desc">Points + cash estimate</span>
+        </div>
+        <div class="screenshot-placeholder">
+          <span class="screenshot-label">Earnings page</span>
+          <span class="screenshot-desc">Confirmed events</span>
+        </div>
+        <div class="screenshot-placeholder">
+          <span class="screenshot-label">Live stats</span>
+          <span class="screenshot-desc">Public proof</span>
+        </div>
+      </div>
+
+      <p class="beta-line">Earnings confirmed today. <strong>Claim payout via Mollie</strong> — sandbox/demo ready / shipping next.</p>
+    </section>
+
+    <!-- Slide 5: Business -->
+    <section class="slide" data-slide="5">
+      <header class="slide-header">
+        <img src="assets/stayon-icon-128.svg" alt="StayOn" class="logo" width="40" height="40" />
+      </header>
+      <h1>The monetization layer for AI idle time.</h1>
+
+      <div class="revenue-streams">
+        <div class="stream">
+          <span class="stream-num">1</span>
+          <div>
+            <h3>Task revenue share</h3>
+            <p>CPX / surveys today → StayOn keeps ~30%</p>
+          </div>
+        </div>
+        <div class="stream">
+          <span class="stream-num">2</span>
+          <div>
+            <h3>Sponsored dev cards</h3>
+            <p>Devtools pay for wait-time impressions (next)</p>
+          </div>
+        </div>
+        <div class="stream">
+          <span class="stream-num">3</span>
+          <div>
+            <h3>AI feedback tasks</h3>
+            <p>Labs pay for code-rating microtasks (Phase 3)</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="unit-econ">Developer completes $0.50–$3 survey → user earns ~50% → StayOn margin on every wait session.</p>
+
+      <table class="gtm-table">
+        <thead>
+          <tr><th>Channel</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Open VSX / Cursor</strong></td><td>Where developers already are</td></tr>
+          <tr><td><strong>/try viral loop</strong></td><td>One link to install + prove earnings</td></tr>
+          <tr><td><strong>Build-in-Public</strong></td><td>Demo clips, live metrics, commits</td></tr>
+          <tr><td><strong>Expand agents</strong></td><td>Codex, Claude Code, Copilot — same wait-time wedge</td></tr>
+        </tbody>
+      </table>
+
+      <div class="mollie-flow">
+        <span>CPX confirms earning</span><span class="arrow">→</span>
+        <span>Supabase ledger</span><span class="arrow">→</span>
+        <span>User claims</span><span class="arrow">→</span>
+        <span class="gold">Mollie payout</span>
+      </div>
+
+      <footer class="closing">
+        <p class="vision">Today: earn during Cursor waits. Tomorrow: earn, learn, or focus — across every AI coding agent.</p>
+        <p class="tagline">Stay on the laptop. Stay in flow. <span class="gold">StayOn.</span></p>
+      </footer>
+    </section>
+
+  </div>
+
+  <nav class="deck-nav" aria-label="Slide navigation">
+    <button id="prev" aria-label="Previous slide">←</button>
+    <span id="counter">1 / 5</span>
+    <button id="next" aria-label="Next slide">→</button>
+  </nav>
+
+  <div class="progress-bar"><div id="progress"></div></div>
+
+  <script src="js/deck.js"></script>
+</body>
+</html>

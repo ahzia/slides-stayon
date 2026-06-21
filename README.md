@@ -1,23 +1,22 @@
 # StayOn Pitch Deck
 
-5-slide MEGATHON Startup Track finals deck. Built from StayOn product docs.
+5-slide MEGATHON Startup Track finals deck.
+
+**Live:** connect this repo to [Vercel](https://vercel.com) — no build step required.
 
 ## Slides
 
-1. **Problem + why now** — AI wait time breaks developer focus
-2. **Solution** — Earn money while your agent works
+1. **Problem** — AI wait time breaks developer focus (video proof)
+2. **Solution** — Earn while waiting for your agent
 3. **Execution** — Friday idea → Sunday live product
 4. **Proof** — Real money, real ledger, open it now
-5. **Business + GTM** — Monetization layer for AI idle time
+5. **Business** — Task supply, revenue, GTM, vision
 
 ## Run locally
 
 ```bash
-# Option A: Python
 python3 -m http.server 8080
-
-# Option B: npx
-npx serve .
+# or: npx serve .
 ```
 
 Open [http://localhost:8080](http://localhost:8080).
@@ -31,29 +30,37 @@ Open [http://localhost:8080](http://localhost:8080).
 | `F` | Fullscreen |
 | `#3` in URL | Jump to slide 3 |
 
-## Deploy
+## Deploy to Vercel
 
-Static files only — deploy to Vercel, Netlify, GitHub Pages, or Pitch.com export target.
+### Option A — Vercel dashboard
+
+1. Import [github.com/ahzia/slides-stayon](https://github.com/ahzia/slides-stayon)
+2. Framework preset: **Other** (static)
+3. Build command: leave empty
+4. Output directory: `.`
+5. Deploy
+
+### Option B — CLI
 
 ```bash
-# Vercel
+npm i -g vercel
 vercel --prod
+```
 
-# GitHub Pages: push to gh-pages branch or enable Pages on main
+No build step. `vercel.json` sets cache headers for video assets.
+
+## Repo structure
+
+```
+index.html          # Deck
+css/deck.css        # Styles
+js/deck.js          # Navigation + live stats fetch
+assets/             # Logo, videos, agent icons
+vercel.json         # Vercel static config
 ```
 
 ## Live proof links (slide 4)
 
-- Install: [open-vsx.org/extension/stayon/stayon](https://open-vsx.org/extension/stayon/stayon)
-- Onboard: [stay-on-nu.vercel.app/try](https://stay-on-nu.vercel.app/try)
-- Earnings: [stay-on-nu.vercel.app/earnings](https://stay-on-nu.vercel.app/earnings)
-
-## Before finals
-
-- [ ] Add real screenshots to slide 4 placeholders (`assets/screenshots/`)
-- [ ] Verify live stats load on slide 3 (fetches `/api/stats/summary`)
-- [ ] Rehearse ~2:30–3:00 timing (~30–40 sec per slide)
-
-## Source
-
-Content from StayOn `docs/24_pitch_deck_plan.md` and related product docs.
+- [Open VSX install](https://open-vsx.org/extension/stayon/stayon)
+- [stay-on-nu.vercel.app/try](https://stay-on-nu.vercel.app/try)
+- [stay-on-nu.vercel.app/earnings](https://stay-on-nu.vercel.app/earnings)

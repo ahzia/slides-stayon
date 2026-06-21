@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Gemini">
+  <rect width="24" height="24" rx="5" fill="#1A1A2E"/>
+  <path fill="#4285F4" d="M12 5l2.2 4.5 4.8.7-3.5 3.4.8 4.8L12 16.3 7.7 18.4l.8-4.8L5 10.2l4.8-.7L12 5z"/>
+  <path fill="#EA4335" d="M12 5v4.5l2.2-4.5H12z" opacity=".8"/>
+  <path fill="#FBBC04" d="M14.2 9.5L12 10.2l4.8-.7-2.6 2.6z" opacity=".8"/>
+</svg>
